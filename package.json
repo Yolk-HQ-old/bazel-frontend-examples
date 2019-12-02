@@ -7,6 +7,9 @@
   "author": "Spencer Elliott <me@elliottsj.com>",
   "license": "UNLICENSED",
   "private": true,
+  "scripts": {
+    "build": "bazel build //..."
+  },
   "dependencies": {
     "@bazel/bazel": "^1.2.0",
     "@bazel/ibazel": "^0.10.3",
