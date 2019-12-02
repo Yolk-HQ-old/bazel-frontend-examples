@@ -8,6 +8,7 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@bazel/bazel": "^1.2.0"
+    "@bazel/bazel": "^1.2.0",
+    "@bazel/ibazel": "^0.10.3"
   }
 }
