@@ -6,5 +6,8 @@
   "repository": "git@github.com:Yolk-HQ/bazel-frontend-examples.git",
   "author": "Spencer Elliott <me@elliottsj.com>",
   "license": "UNLICENSED",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@bazel/bazel": "^1.2.0"
+  }
 }
