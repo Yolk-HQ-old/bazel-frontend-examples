@@ -9,6 +9,10 @@
   "private": true,
   "dependencies": {
     "@bazel/bazel": "^1.2.0",
-    "@bazel/ibazel": "^0.10.3"
+    "@bazel/ibazel": "^0.10.3",
+    "minimist": "^1.2.0",
+    "next": "^9.1.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }
