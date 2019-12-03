@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@bazel/bazel": "^1.2.0",
+    "@bazel/buildifier": "^0.29.0",
     "@bazel/ibazel": "^0.10.3",
     "minimist": "^1.2.0",
     "next": "^9.1.4",

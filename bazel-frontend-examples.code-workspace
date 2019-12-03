@@ -1,0 +1,14 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "./nextjs-app"
+    }
+  ],
+  "settings": {
+    "bazel.buildifierExecutable": "node_modules/.bin/buildifier",
+    "bazel.buildifierFixOnFormat": true
+  }
+}
