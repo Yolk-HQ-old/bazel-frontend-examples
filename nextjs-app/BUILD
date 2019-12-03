@@ -1,4 +1,5 @@
 load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary", "npm_package_bin")
+load("@npm//next:index.bzl", "next")
 
 nodejs_binary(
     name = "next_build",
@@ -16,6 +17,7 @@ nodejs_binary(
 npm_package_bin(
     name = "build",
     args = [
+        "--node_options=--inspect-brk",
         "--src_dir",
         "$(location :src)",
         "--out_dir",
@@ -24,4 +26,18 @@ npm_package_bin(
     data = ["src/."],
     output_dir = True,
     tool = ":next_build",
+)
+
+next(
+    name = "dev",
+    args = [
+        "dev",
+        "nextjs-app/src",  # TODO: resolve this path properly using a filegroup
+    ],
+    data = [
+        "src/.",
+        "@npm//:node_modules",
+        "@npm//react",
+        "@npm//react-dom",
+    ],
 )
